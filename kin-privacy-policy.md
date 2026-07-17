@@ -1,63 +1,60 @@
-Privacy Policy for Kin
-Effective date: May 18, 2026
+# Privacy Policy for Kin
 
-Kin is a personal finance companion app designed to help users track transactions, goals, notes, reminders, files, and conversations with an assistant.
+Last updated: 16 July 2026
 
-Information We Collect
-Kin may store information that you enter into the app, including:
+## What Kin does
 
-financial transactions, balances, categories, and goals;
-chat messages and assistant prompts;
-notes, reminders, and notification preferences;
-files or documents that you choose to add to the app;
-app settings such as language, currency, and personalization preferences.
-Kin does not sell your personal data.
+Kin is a personal companion app. It records conversations at your request, converts them to text, and helps you analyse them. It also helps you track personal finances.
 
-How We Use Information
-Information is used to provide the app's core functionality, including:
+## What we collect
 
-showing your financial overview;
-helping you manage goals and transactions;
-generating summaries, reports, forecasts, and reminders;
-improving your in-app assistant experience;
-restoring or syncing your app data if cloud features are enabled.
-Files and Documents
-If you add files, images, PDFs, spreadsheets, or other documents to Kin, they are used only to provide the features you request, such as importing data, creating reports, or helping the assistant analyze user-provided content.
+**Account.** Your email address and an encrypted password.
 
-Assistant Features
-Kin may process your messages and requests to generate assistant responses. Do not enter sensitive information that you do not want processed by the assistant feature.
+**Conversation recordings.** Audio you choose to record and its text transcript.
 
-Notifications
-Kin may ask permission to send notifications, such as reminders, daily digests, or app-related alerts. You can manage notification permissions in iOS settings.
+**Financial data.** Transactions, goals, and notes that you add yourself or through the assistant.
 
-Cloud Sync
-If cloud sync or restore features are enabled, selected app data may be transmitted to and stored using backend services in order to save and restore your information. If cloud sync is not enabled, data may remain local to your device depending on the feature used.
+**Assistant messages.** The text of your chat messages.
 
-Third-Party Services
-Kin may use third-party services for backend storage, authentication, app functionality, analytics, or AI-assisted features. These services process information only as needed to provide Kin's functionality.
+**App data.** Files you choose to add, reminders, and settings such as language and currency.
 
-Data Sharing
-We do not sell your data. We may share information only when required to:
+We do not collect your location, do not track you across other apps or websites, do not show ads, and do not sell your data.
 
-provide app functionality through service providers;
-comply with legal obligations;
-protect the safety, security, or integrity of the app.
-Data Retention
-Kin keeps user-provided data for as long as needed to provide the app's features or until you delete it, where deletion is supported by the app or backend service.
+## Who we share data with
 
-Children's Privacy
-Kin is not directed to children under 13. We do not knowingly collect personal information from children under 13.
+**AssemblyAI** — receives your audio recordings to transcribe them into text. Audio is deleted 7 days after upload. The transcript stays in your account.
 
-Security
-We use reasonable technical and organizational measures to help protect user data. However, no method of transmission or storage is completely secure.
+**Anthropic** — receives transcripts and your chat messages so the assistant can analyse them and reply.
 
-Your Choices
-You can manage app permissions through iOS settings. You may also delete app data from within the app where available or by removing the app from your device.
+**Supabase** — stores your account, recordings, and data.
 
-Contact
-If you have questions about this Privacy Policy, contact:
+These providers process your data only to deliver the services listed above.
 
-mgaloyan79@gmail.com
+## Conversation recording
 
-Changes to This Policy
-We may update this Privacy Policy from time to time. Updates will be posted on this page with a revised effective date.
+Recording never starts on its own. It begins only when you act: by tapping the record button in the app, or by launching the Kin shortcut. The app does not record you silently.
+
+Before your first recording, Kin shows a consent screen explaining where the audio goes and how long it is kept. Recording does not start unless you accept.
+
+Record a conversation only if the other participants do not object. You are responsible for complying with the recording laws that apply where you are.
+
+## How long we keep data
+
+Audio recordings: 7 days, then deleted automatically.
+Transcripts and your other data: for as long as you use your account.
+
+## Deleting your data
+
+In the app: Settings → Delete account. This erases all of your data, recordings, and transcripts. It cannot be undone.
+
+## Children
+
+Kin is not intended for children under 13.
+
+## Changes
+
+If this policy changes, we will update this page and the date above.
+
+## Contact
+
+Questions about your data: mgaloyan79@gmail.com
