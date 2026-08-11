@@ -1,60 +1,64 @@
 # Privacy Policy for Kin
 
-Last updated: 16 July 2026
+Last updated: August 11, 2026
 
 ## What Kin does
 
-Kin is a personal companion app. It records conversations at your request, converts them to text, and helps you analyse them. It also helps you track personal finances.
+Kin is a personal companion app. It helps you organize personal finances, goals, notes, and conversations. At your request, Kin can record conversations, convert speech to text, translate speech or text, and help analyze content.
 
-## What we collect
+## What we process
 
-**Account.** Your email address and an encrypted password.
+Depending on the features you choose to use, Kin may process:
 
-**Conversation recordings.** Audio you choose to record and its text transcript.
+- **Account information.** Your email address and account identifier. Authentication credentials are managed by Supabase Authentication; Kin does not store raw passwords.
+- **Financial data.** Transactions, categories, goals, and notes that you add yourself or through the assistant.
+- **Assistant messages.** Text you send to the Kin assistant and responses shown to you.
+- **Conversation recordings.** Audio you choose to record and the resulting transcript.
+- **Voice translation data.** Audio, recognized text, source text, and translated text when you start a voice or text translation.
+- **Files and app data.** Files you choose to add, extracted file content when you ask Kin to read it, reminders, and settings such as language and currency.
 
-**Financial data.** Transactions, goals, and notes that you add yourself or through the assistant.
+We do not collect precise location, do not use data for cross-app or cross-site tracking, do not show third-party advertising, and do not sell personal data.
 
-**Assistant messages.** The text of your chat messages.
+## When recording, translation, and file processing start
 
-**App data.** Files you choose to add, reminders, and settings such as language and currency.
+Recording, voice translation, file import, and assistant file analysis start only after you choose the relevant action in Kin or launch a Kin shortcut. A shortcut is treated as a user action. Kin does not begin recording silently.
 
-We do not collect your location, do not track you across other apps or websites, do not show ads, and do not sell your data.
-
-## Who we share data with
-
-**AssemblyAI** — receives your audio recordings to transcribe them into text. Audio is deleted 7 days after upload. The transcript stays in your account.
-
-**Anthropic** — receives transcripts and your chat messages so the assistant can analyse them and reply.
-
-**Supabase** — stores your account, recordings, and data.
-
-These providers process your data only to deliver the services listed above.
-
-## Conversation recording
-
-Recording never starts on its own. It begins only when you act: by tapping the record button in the app, or by launching the Kin shortcut. The app does not record you silently.
-
-Before your first recording, Kin shows a consent screen explaining where the audio goes and how long it is kept. Recording does not start unless you accept.
+Before the first use of a feature that can send audio, text, or file content to a third-party processor, Kin asks for consent. You can decline and continue using features that do not require that processing.
 
 Record a conversation only if the other participants do not object. You are responsible for complying with the recording laws that apply where you are.
 
-## How long we keep data
+## Service providers and data sharing
 
-Audio recordings: 7 days, then deleted automatically.
-Transcripts and your other data: for as long as you use your account.
+We use service providers only to operate the features you request:
 
-## Deleting your data
+- **Supabase** provides authentication, database, synchronization, and storage services for Kin account data and content.
+- **AssemblyAI** receives conversation audio that you choose to transcribe. Audio is deleted 7 days after upload. The resulting transcript can remain in your Kin account until you delete it or delete your account.
+- **Anthropic** receives assistant messages and, when you ask the assistant to analyze them, relevant transcripts or extracted file content so the assistant can respond.
+- **Google Cloud Speech-to-Text** receives audio that you choose to use for voice recognition or voice translation.
+- **Google Cloud Translation** receives source text, including recognized speech or text you enter, when you request a translation.
 
-In the app: Settings → Delete account. This erases all of your data, recordings, and transcripts. It cannot be undone.
+Kin does not enroll its Google Cloud Speech-to-Text project in Google's optional data logging program. Google Cloud speech and translation services process the content needed to provide the requested result. Google may process requests outside your country of residence.
+
+We do not share your content with third parties for their own advertising or marketing purposes.
+
+## Retention and deletion
+
+Conversation audio is deleted 7 days after upload. Transcripts, translated text, financial data, goals, notes, chats, and files remain in your account until you delete them or delete your account, subject to limited temporary backups and legal or security obligations.
+
+You can request deletion by using **Settings -> Delete account** in Kin or by contacting us. Account deletion removes your account content and cannot be undone.
+
+## Security
+
+Kin uses encrypted HTTPS connections to transmit data between the app and its services. No method of transmission or storage is completely secure, but we use reasonable safeguards designed to protect your information.
 
 ## Children
 
-Kin is not intended for children under 13.
+Kin is not intended for children under 13 and is not designed to knowingly process their personal data.
 
 ## Changes
 
-If this policy changes, we will update this page and the date above.
+If this policy changes, we will update this page and its "Last updated" date.
 
 ## Contact
 
-Questions about your data: mgaloyan79@gmail.com
+For privacy questions or requests, contact: mgaloyan79@gmail.com
