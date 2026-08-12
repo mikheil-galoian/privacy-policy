@@ -1,55 +1,77 @@
 # Privacy Policy for Kin
 
-Last updated: August 11, 2026
+Last updated: August 12, 2026
 
 ## What Kin does
 
-Kin is a personal companion app. It helps you organize personal finances, goals, notes, and conversations. At your request, Kin can record conversations, convert speech to text, translate speech or text, and help analyze content.
+Kin is a personal companion app for finances, goals, notes, planning, files, conversations, and optional AI assistance. Features that record, transcribe, translate, or analyze content start only after a user action.
 
-## What we process
+## Data Kin may process
 
-Depending on the features you choose to use, Kin may process:
+- **Account data:** email address, account identifier, password verifier, and session data.
+- **Financial and planning data:** transactions, categories, goals, notes, reminders, calendar-related items, and planned tasks.
+- **Assistant data:** messages and the context you choose to provide.
+- **Recordings:** audio you choose to record, transcription status, and transcript.
+- **Translation data:** audio, recognized text, translated text, language, and selected voice.
+- **Files:** files you choose to add and extracted content when you ask Kin to read them.
+- **Diagnostics:** limited crash and operational data used to keep Kin working.
 
-- **Account information.** Your email address and account identifier. Authentication credentials are managed by Supabase Authentication; Kin does not store raw passwords.
-- **Financial data.** Transactions, categories, goals, and notes that you add yourself or through the assistant.
-- **Assistant messages.** Text you send to the Kin assistant and responses shown to you.
-- **Conversation recordings.** Audio you choose to record and the resulting transcript.
-- **Voice translation data.** Audio, recognized text, source text, and translated text when you start a voice or text translation.
-- **Files and app data.** Files you choose to add, extracted file content when you ask Kin to read it, reminders, and settings such as language and currency.
+Kin does not use this data for cross-app tracking, does not show third-party advertising, and does not sell personal data.
 
-We do not collect precise location, do not use data for cross-app or cross-site tracking, do not show third-party advertising, and do not sell personal data.
+## Your data-region choice
 
-## When recording, translation, and file processing start
+Kin asks you to choose a data region. A device-region recommendation is only a recommendation; changing the interface language does not move data. Kin records the explicit choice and does not silently fall back to another region when a requested regional service is unavailable.
 
-Recording, voice translation, file import, and assistant file analysis start only after you choose the relevant action in Kin or launch a Kin shortcut. A shortcut is treated as a user action. Kin does not begin recording silently.
+### Russian data region
 
-Before the first use of a feature that can send audio, text, or file content to a third-party processor, Kin asks for consent. You can decline and continue using features that do not require that processing.
+When you explicitly choose the Russian data region, **Yandex Cloud** processes and stores:
 
-Record a conversation only if the other participants do not object. You are responsible for complying with the recording laws that apply where you are.
+- email account and session data;
+- salted password verifiers, private backups, financial and planning data;
+- user files and recorded audio;
+- Yandex SpeechKit transcription jobs, status, and transcripts;
+- assistant messages and selected context processed by Yandex AI Studio;
+- text and selected voice processed by Yandex SpeechKit when you request spoken assistant playback;
+- quota counters and redacted operational audit events.
 
-## Service providers and data sharing
+Raw passwords and raw session tokens are not stored. Password verifiers use a salted one-way derivation, and only a hash of the session token is retained on the server.
 
-We use service providers only to operate the features you request:
+Global Anthropic assistant processing and Google voice services are disabled in the Russian data region. In that region, requested assistant replies use Yandex AI Studio and requested spoken assistant playback uses Yandex SpeechKit. Kin does not silently send those requests outside the selected region. Google voice translation remains unavailable in the Russian region until a Russian translation provider is connected and disclosed.
 
-- **Supabase** provides authentication, database, synchronization, and storage services for Kin account data and content.
-- **AssemblyAI** receives conversation audio that you choose to transcribe. Audio is deleted 7 days after upload. The resulting transcript can remain in your Kin account until you delete it or delete your account.
-- **Anthropic** receives assistant messages and, when you ask the assistant to analyze them, relevant transcripts or extracted file content so the assistant can respond.
-- **Google Cloud Speech-to-Text** receives audio that you choose to use for voice recognition or voice translation.
-- **Google Cloud Translation** receives source text, including recognized speech or text you enter, when you request a translation.
+### Global data region
 
-Kin does not enroll its Google Cloud Speech-to-Text project in Google's optional data logging program. Google Cloud speech and translation services process the content needed to provide the requested result. Google may process requests outside your country of residence.
+When you explicitly choose the global data region, Kin may use:
 
-We do not share your content with third parties for their own advertising or marketing purposes.
+- **Supabase** for authentication, database, synchronization, server functions, and storage;
+- **AssemblyAI** for transcription of recordings you choose to submit;
+- **Anthropic** for assistant messages and the transcript or extracted file context you ask the assistant to analyze;
+- **Google Cloud Speech-to-Text, Cloud Translation, and Cloud Text-to-Speech** for voice recognition, translation, spoken translation, and selected spoken assistant playback you request.
 
-## Retention and deletion
+These providers receive only the data needed for the requested feature. Google Cloud Speech data logging is disabled for Kin's project. Processing may occur outside your country of residence.
 
-Conversation audio is deleted 7 days after upload. Transcripts, translated text, financial data, goals, notes, chats, and files remain in your account until you delete them or delete your account, subject to limited temporary backups and legal or security obligations.
+## Consent and recording notice
 
-You can request deletion by using **Settings -> Delete account** in Kin or by contacting us. Account deletion removes your account content and cannot be undone.
+Before first use of cloud recording/transcription, file processing, AI processing, or cloud voice services, Kin presents a consent notice naming the processor for the selected data region. You may decline and continue using features that do not need that processing.
+
+Recording never starts by itself. It begins after you tap the recording control or launch a Kin shortcut. Kin announces the recording aloud before the microphone starts. Record only when participants do not object and follow the laws that apply where you are.
+
+## Retention
+
+For the Russian data region:
+
+- recording audio is automatically deleted after 7 days;
+- account sessions and redacted audit events are deleted after 30 days;
+- transcripts, files, financial/planning data, messages, and backups remain until you delete them, delete the relevant item, or delete your account.
+
+For the global data region, AssemblyAI recording audio is deleted after 7 days. Other account content remains until you delete it or delete your account, subject to limited operational backups and legal or security obligations.
+
+## Deleting data
+
+You can delete individual supported items in Kin. **Settings -> Delete account** deletes the selected-region cloud account and associated content and clears personal data stored locally by Kin. Account deletion cannot be undone. You may also contact us for a privacy request.
 
 ## Security
 
-Kin uses encrypted HTTPS connections to transmit data between the app and its services. No method of transmission or storage is completely secure, but we use reasonable safeguards designed to protect your information.
+Kin uses HTTPS encryption in transit, private storage, owner-derived storage paths, short-lived signed file links, device Keychain storage for sessions, least-privilege service permissions, and redacted operational logs. No transmission or storage method can be guaranteed completely secure.
 
 ## Children
 
@@ -57,8 +79,8 @@ Kin is not intended for children under 13 and is not designed to knowingly proce
 
 ## Changes
 
-If this policy changes, we will update this page and its "Last updated" date.
+If this policy changes, this page and the date above will be updated.
 
 ## Contact
 
-For privacy questions or requests, contact: mgaloyan79@gmail.com
+Privacy questions or requests: mgaloyan79@gmail.com
