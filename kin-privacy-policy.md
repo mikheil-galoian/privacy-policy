@@ -31,12 +31,13 @@ When you explicitly choose the Russian data region, **Yandex Cloud** processes a
 - user files and recorded audio;
 - Yandex SpeechKit transcription jobs, status, and transcripts;
 - assistant messages and selected context processed by Yandex AI Studio;
+- short audio phrases and translated speech processed by Yandex SpeechKit, and recognized text processed by Yandex Translate, when you request voice translation;
 - text and selected voice processed by Yandex SpeechKit when you request spoken assistant playback;
 - quota counters and redacted operational audit events.
 
 Raw passwords and raw session tokens are not stored. Password verifiers use a salted one-way derivation, and only a hash of the session token is retained on the server.
 
-Global Anthropic assistant processing and Google voice services are disabled in the Russian data region. In that region, requested assistant replies use Yandex AI Studio and requested spoken assistant playback uses Yandex SpeechKit. Kin does not silently send those requests outside the selected region. Google voice translation remains unavailable in the Russian region until a Russian translation provider is connected and disclosed.
+Global Anthropic assistant processing and Google voice services are disabled in the Russian data region. In that region, requested assistant replies use Yandex AI Studio, voice translation uses Yandex SpeechKit and Yandex Translate, and requested spoken assistant playback uses Yandex SpeechKit. Kin does not silently send those requests outside the selected region.
 
 ### Global data region
 
